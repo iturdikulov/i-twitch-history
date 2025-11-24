@@ -1,5 +1,7 @@
 ## Project Idea
 
+- Fetch, analyze and visualize twitch chat data.
+
 ## Golden Path
 
 - Python 3.14
