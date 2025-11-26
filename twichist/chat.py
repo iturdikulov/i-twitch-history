@@ -1,19 +1,13 @@
 import logging
-from datetime import datetime, timezone
-# from dateutil import parser
+from datetime import datetime
 from os import environ
-from pathlib import Path
 from venv import logger
 import httpx
 
 def get_time_difference(start_time: datetime, end_time: datetime) -> float:
     return (end_time - start_time).total_seconds()
 
-# def parse_twitch_timestamp(timestamp: str) -> datetime:
-#     date = parser.parse(timestamp)
-#     return date.replace(tzinfo=timezone.utc)
-
-# --- GQL Operations ---
+# TODO: remove hard-coded operation
 GQL_OPERATIONS = {
     "VideoCommentsByOffsetOrCursor": {
         "hash": "b70a3591ff0f4e0313d126c6a1502d79a1c02baebb288227c582044aa76adf6a",
