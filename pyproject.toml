@@ -1,7 +1,28 @@
 [project]
-name = "i-twitch-history"
+name = "twichist"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "fastapi[standard-no-fastapi-cloud-cli]>=0.122.0",
+    "faststream>=0.6.3",
+    "httpx>=0.28.1",
+    "pydantic-settings>=2.12.0",
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = [
+    "-v"
+]
+testpaths = [
+    "tests",
+    "integration",
+]
+log_cli = true
+log_cli_level = "INFO"
+markers = [
+    "messaging: marks tests as messaging tests",
+]
+
