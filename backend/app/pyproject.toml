@@ -1,7 +1,7 @@
 [project]
-name = "twichist"
+name = "app"
 version = "0.1.0"
-description = "Add your description here"
+description = "Twichist backend"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
