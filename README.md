@@ -8,7 +8,7 @@
 - Twitch chat fetcher
 - Client: ReactJS, ShadCn
 - Server: FastAPI, Pydantic
-- Tasks: aio-pika, RabbitMQ
+- Tasks: faststream, kafka
 - DB: PostgreSQL, asyncpg
 
 ## Links
