@@ -32,7 +32,7 @@ class ChatDownloader:
         elif cursor:
             variables["cursor"] = cursor
 
-        json_data = [
+        q = [
                 {
                     "extensions": {
                         "persistedQuery": {"sha256Hash": query_hash, "version": 1}
@@ -42,10 +42,8 @@ class ChatDownloader:
                 }
             ]
 
-        logger.info(json_data)
-
         r = httpx.post("https://gql.twitch.tv/gql",
-            json=json_data,
+            json=q,
             headers=self._headers
         ).json()
 
