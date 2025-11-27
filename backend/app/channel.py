@@ -61,6 +61,6 @@ class Channel():
 
         return videos[:limit]
 
-    def vods(self, owner_login):
-        videos = self.get_channel_videos(owner_login)
+    def vods(self, owner_login, limit=10):
+        videos = self.get_channel_videos(owner_login, limit=limit)
         return [Vod(id=video["id"], title=video["title"]) for video in videos]
