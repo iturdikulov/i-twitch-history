@@ -1,5 +1,4 @@
 from app import Channel
-import logging
 
 def test_vods_list():
     channel = Channel()

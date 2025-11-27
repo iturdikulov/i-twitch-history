@@ -1,4 +1,3 @@
-from time import sleep
 import httpx
 import logging
 from os import environ
