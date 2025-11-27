@@ -28,6 +28,7 @@ markers = [
 
 [dependency-groups]
 dev = [
+    "debugpy>=1.8.17",
     "pytest>=9.0.1",
 ]
 
