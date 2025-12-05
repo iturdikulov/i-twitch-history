@@ -3,6 +3,7 @@
 ## Project Idea
 
 - Fetch, analyze and visualize twitch chat data.
+- [TODO](TODO.md)
 
 ## Golden Path
 
